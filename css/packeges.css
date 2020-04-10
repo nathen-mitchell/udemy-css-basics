@@ -1,3 +1,14 @@
+main {
+  padding-top: 32px;
+}
+.background {
+  background: url(../images/plans-background.jpg);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
 #box-level {
   border: 1px solid #0e4f1f;
   background: #ffffff;
@@ -20,25 +31,69 @@
 
 .hello {
   color: grey;
+  text-decoration: none;
+}
+.clearfix {
+  clear: both;
 }
 
-.lo {
+.packages {
+  background: lightgreen;
+  border: 4px solid #0e4f1f;
+  width: 60%;
+  margin-top: 15px;
+  padding: 8px;
+  border-left: none;
+  position: relative;
+}
+
+.packages a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 32px;
+  border-left: none;
+}
+
+.package__bage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  font-size: 12px;
+  color: #ffffff;
+  background: #ff5454;
+  padding: 8px;
+}
+
+.package-2 {
+  float: right;
+  border-right: none;
+  border-left: 4px solid #0e4f1f;
+  text-align: right;
+}
+
+.package-3 {
   background: #0e4f1f;
   border: 2px solid black;
-  width: 80%;
+  width: 60%;
   margin-top: 15px;
+  text-decoration: none;
 }
 
 #redo {
   color: white;
+  text-decoration: none;
 }
 
 #pop {
   border: 1px solid #0e4f1f;
   background: #ffffff;
+  color: black;
   padding: 16px;
   margin: 15px;
   font-size: 20px;
+  text-decoration: none;
 }
 
 section:hover,
@@ -48,20 +103,9 @@ section:active {
 
 section {
   text-align: center;
-}
-
-.packages {
-  background: lightgreen;
-  border: 4px solid #0e4f1f;
-  width: 80%;
-  margin-top: 15px;
-  padding: 8px;
-  border-left: none;
-}
-
-.packages a {
   text-decoration: none;
-  color: inherit;
-  display: block;
-  padding: 32px;
+}
+
+section a {
+  text-decoration: none;
 }
